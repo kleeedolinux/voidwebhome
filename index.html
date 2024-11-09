@@ -1,0 +1,95 @@
+<html>
+<head>
+    <title>VoidWeb Home Screen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+        }
+        .interactive-bg {
+            background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+            animation: gradient 15s ease infinite;
+        }
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .link-hover:hover {
+            color: #3b82f6;
+            text-decoration: underline;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+        .transgender-flag {
+            background: linear-gradient(90deg, #55CDFC 20%, #F7A8B8 20%, #FFF 40%, #F7A8B8 60%, #55CDFC 60%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .feature-card:hover {
+            background-color: #1f2937;
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body class="interactive-bg">
+    <div class="container mx-auto text-center py-20">
+        <h1 class="text-5xl font-bold mb-6 transgender-flag">Welcome to VoidWeb</h1>
+        <p class="text-xl mb-8">Manage your domains and search the web with ease.</p>
+        <div class="flex justify-center space-x-4 mb-12">
+            <a class="text-lg text-blue-400 hover:text-blue-600 link-hover">vd://domain.rb</a>
+            <a class="text-lg text-blue-400 hover:text-blue-600 link-hover">vd://bill.rb</a>
+        </div>
+        <div class="bg-gray-900 bg-opacity-50 p-8 rounded-lg shadow-lg mb-12 card">
+            <h2 class="text-3xl font-semibold mb-4">Domain Manager</h2>
+            <p class="text-lg">Register your domain for free in VoidWeb. Click the link above to get started.</p>
+        </div>
+        <div class="bg-gray-900 bg-opacity-50 p-8 rounded-lg shadow-lg mb-12 card">
+            <h2 class="text-3xl font-semibold mb-4">Search Engine</h2>
+            <p class="text-lg">Use our powerful search engine to find what you need. Click the link above to start searching.</p>
+        </div>
+        <div class="bg-gray-900 bg-opacity-50 p-8 rounded-lg shadow-lg mb-12 card">
+            <h2 class="text-3xl font-semibold mb-4">Our Mission</h2>
+            <p class="text-lg">VoidWeb aims to be an alternative, privacy-focused solution to the World Wide Web. We prioritize your privacy and security, ensuring that your data remains yours. Join us in creating a safer, more private internet experience.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg feature-card">
+                <i class="fas fa-shield-alt text-4xl text-blue-400 mb-4"></i>
+                <h3 class="text-2xl font-semibold mb-2">Privacy Protection</h3>
+                <p class="text-lg">Your data is yours. We ensure top-notch privacy protection for all your activities.</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg feature-card">
+                <i class="fas fa-globe text-4xl text-blue-400 mb-4"></i>
+                <h3 class="text-2xl font-semibold mb-2">Global Reach</h3>
+                <p class="text-lg">Access VoidWeb from anywhere in the world with our global infrastructure.</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg feature-card">
+                <i class="fas fa-lock text-4xl text-blue-400 mb-4"></i>
+                <h3 class="text-2xl font-semibold mb-2">Secure Connections</h3>
+                <p class="text-lg">All connections are encrypted to ensure your data remains secure.</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg feature-card">
+                <i class="fas fa-user-shield text-4xl text-blue-400 mb-4"></i>
+                <h3 class="text-2xl font-semibold mb-2">User Anonymity</h3>
+                <p class="text-lg">We prioritize user anonymity, ensuring your identity is protected.</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg feature-card">
+                <i class="fas fa-tachometer-alt text-4xl text-blue-400 mb-4"></i>
+                <h3 class="text-2xl font-semibold mb-2">Fast Performance</h3>
+                <p class="text-lg">Experience lightning-fast performance with our optimized infrastructure.</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg feature-card">
+                <i class="fas fa-users text-4xl text-blue-400 mb-4"></i>
+                <h3 class="text-2xl font-semibold mb-2">Community Support</h3>
+                <p class="text-lg">Join a community of like-minded individuals who value privacy and security.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
